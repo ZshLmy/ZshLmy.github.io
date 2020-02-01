@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-01T07:47:17.909Z</updated>
+  <updated>2020-02-01T08:34:43.305Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,19 +21,17 @@
     <link href="http://yoursite.com/2020/02/01/Markdown%E7%AE%80%E4%BB%8B/"/>
     <id>http://yoursite.com/2020/02/01/Markdown%E7%AE%80%E4%BB%8B/</id>
     <published>2020-02-01T07:05:53.391Z</published>
-    <updated>2020-02-01T07:47:17.909Z</updated>
+    <updated>2020-02-01T08:34:43.305Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h1><blockquote><p>这里是引用</p></blockquote><ul><li>这是无序列表</li></ul><ol><li>这是有序列表</li></ol><p>这是表格</p><table><thead><tr><th align="center">A</th><th>B</th><th>C</th></tr></thead><tbody><tr><td align="center">D</td><td>E</td><td>F</td></tr><tr><td align="center">G</td><td>H</td><td>I</td></tr><tr><td align="center">J</td><td>K</td><td>L</td></tr></tbody></table><p>这是插入的图片</p><p><img src="..%5Cimages%5C1.jpg" alt="这是图片描述"></p><p><img src="https://dp2px.com/json-data/banner/blog-build.png" alt="第二张图片"><br><img src="https://dp2px.com/json-data/banner/blog-build.png" alt="使用img插入图片" width="200"></p><p><strong>加粗</strong><br><strong><em>斜体加粗</em></strong></p><h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a><del>删除线</del></h2><p>分割线<br><a href="https://www.baidu.com/" target="_blank" rel="noopener">设置超链接</a><br>Markdown可以设置流程图但是太过复杂不建议使用<br><a href="https://dp2px.com/" target="_blank" rel="noopener">参考博客</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h1><blockquote><p>这里是引用</p></blockquote><ul><li>这是无序列表<a id="more"></a></li></ul><ol><li>这是有序列表</li></ol><p>这是表格</p><table><thead><tr><th align="center">A</th><th>B</th><th>C</th></tr></thead><tbody><tr><td align="center">D</td><td>E</td><td>F</td></tr><tr><td align="center">G</td><td>H</td><td>I</td></tr><tr><td align="center">J</td><td>K</td><td>L</td></tr></tbody></table><p>这是插入的图片</p><p><img src="..%5Cimages%5C1.jpg" alt="这是图片描述"></p><p><img src="https://dp2px.com/json-data/banner/blog-build.png" alt="第二张图片"><br><img src="https://dp2px.com/json-data/banner/blog-build.png" alt="使用img插入图片" width="200"></p><p><strong>加粗</strong><br><strong><em>斜体加粗</em></strong></p><h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a><del>删除线</del></h2><p>分割线<br><a href="https://www.baidu.com/" target="_blank" rel="noopener">设置超链接</a><br>Markdown可以设置流程图但是太过复杂不建议使用<br><a href="https://dp2px.com/" target="_blank" rel="noopener">参考博客</a></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;Markdown简介&quot;&gt;&lt;a href=&quot;#Markdown简介&quot; class=&quot;headerlink&quot; title=&quot;Markdown简介&quot;&gt;&lt;/a&gt;Markdown简介&lt;/h1&gt;&lt;blockquote&gt;
+      &lt;h1 id=&quot;Markdown简介&quot;&gt;&lt;a href=&quot;#Markdown简介&quot; class=&quot;headerlink&quot; title=&quot;Markdown简介&quot;&gt;&lt;/a&gt;Markdown简介&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;这里是引用&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;
-      
+&lt;ul&gt;
+&lt;li&gt;这是无序列表
     
     </summary>
     
@@ -48,9 +46,9 @@
     <link href="http://yoursite.com/2020/01/28/%E6%9A%91%E6%9C%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2020/01/28/%E6%9A%91%E6%9C%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2020-01-28T13:54:56.881Z</published>
-    <updated>2020-02-01T06:23:54.357Z</updated>
+    <updated>2020-02-01T08:37:41.237Z</updated>
     
-    <content type="html"><![CDATA[<h5 id="张少辉暑期学习笔记"><a href="#张少辉暑期学习笔记" class="headerlink" title="张少辉暑期学习笔记"></a>张少辉暑期学习笔记</h5><p>自学git<br>自学linux<br>参考网站：<a href="http://www.zshlmy.github.io" target="_blank" rel="noopener">www.zshlmy.github.io</a></p>]]></content>
+    <content type="html"><![CDATA[<h5 id="张少辉暑期学习笔记"><a href="#张少辉暑期学习笔记" class="headerlink" title="张少辉暑期学习笔记"></a>张少辉暑期学习笔记</h5><p>自学git<br>自学linux<br>参考网站：<a href="http://www.zshlmy.gitee.io" target="_blank" rel="noopener">www.zshlmy.gitee.io</a></p>]]></content>
     
     <summary type="html">
     
@@ -61,32 +59,6 @@
     
     </summary>
     
-    
-    
-      <category term="标签测试" scheme="http://yoursite.com/tags/%E6%A0%87%E7%AD%BE%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>I LOVE U</title>
-    <link href="http://yoursite.com/2019/07/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2019/07/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
-    <published>2019-07-28T11:38:45.000Z</published>
-    <updated>2020-02-01T06:25:36.916Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="这就是我们共同的事"><a href="#这就是我们共同的事" class="headerlink" title="这就是我们共同的事"></a>这就是我们共同的事</h2><p>  我萌生写博客的想法是因为你，我感觉到我好多东西都在自己肚子里面存着说不出来。我应该锻炼一下。跟你说的时候我只提到了找工作写博客是加分项。但那是最最最最浅显的帮助对我来说。我最初的目的是记录我和你的故事。把它当成咱们感情的见证。有事没事写点文字记录我们的生活。<br>  我是有点自私。有时候的我只顾着我自己的学习。整天脑子里面除了学习就是玩。自从我对计算机着了迷我就迷失了自己。整天忍不住得盯着电脑看。自己的眼睛真的是很不争气。看完电脑之后我就感觉自己跟一个智障没什么区别。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;这就是我们共同的事&quot;&gt;&lt;a href=&quot;#这就是我们共同的事&quot; class=&quot;headerlink&quot; title=&quot;这就是我们共同的事&quot;&gt;&lt;/a&gt;这就是我们共同的事&lt;/h2&gt;&lt;p&gt;  我萌生写博客的想法是因为你，我感觉到我好多东西都在自己肚子里面存着说不出来。我应
-      
-    
-    </summary>
-    
-    
-      <category term="分类测试" scheme="http://yoursite.com/categories/%E5%88%86%E7%B1%BB%E6%B5%8B%E8%AF%95/"/>
     
     
       <category term="标签测试" scheme="http://yoursite.com/tags/%E6%A0%87%E7%AD%BE%E6%B5%8B%E8%AF%95/"/>

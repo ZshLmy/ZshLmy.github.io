@@ -47,18 +47,18 @@
   };
 </script>
 
-  <meta name="description" content="所谓的美德，都是富有的衍生品。                 ——寄生虫">
+  <meta name="description" content="计蒜客蓝桥杯训练，字符串和日期专题">
 <meta name="keywords" content="蓝桥杯">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计蒜客-字符串和日期">
 <meta property="og:url" content="http://yoursite.com/2020/02/05/计蒜客-字符串和日期/index.html">
 <meta property="og:site_name" content="ZSH">
-<meta property="og:description" content="所谓的美德，都是富有的衍生品。                 ——寄生虫">
+<meta property="og:description" content="计蒜客蓝桥杯训练，字符串和日期专题">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-02-06T08:33:27.490Z">
+<meta property="og:updated_time" content="2020-12-31T04:49:54.938Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计蒜客-字符串和日期">
-<meta name="twitter:description" content="所谓的美德，都是富有的衍生品。                 ——寄生虫">
+<meta name="twitter:description" content="计蒜客蓝桥杯训练，字符串和日期专题">
 
 <link rel="canonical" href="http://yoursite.com/2020/02/05/计蒜客-字符串和日期/">
 
@@ -222,7 +222,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-06 16:33:27" itemprop="dateModified" datetime="2020-02-06T16:33:27+08:00">2020-02-06</time>
+                <time title="Modified: 2020-12-31 12:49:54" itemprop="dateModified" datetime="2020-12-31T12:49:54+08:00">2020-12-31</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -247,9 +247,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <blockquote>
-<p>所谓的美德，都是富有的衍生品。                 ——寄生虫</p>
-</blockquote>
+        <p>计蒜客蓝桥杯训练，字符串和日期专题</p>
 <a id="more"></a>
 
 <h4 id="字符串中A的数量"><a href="#字符串中A的数量" class="headerlink" title="字符串中A的数量"></a>字符串中A的数量</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">题面：输入一个字符串，统计其中字符A的数量并输出</span><br><span class="line">样例输入：</span><br><span class="line">AabdkeaoektA</span><br><span class="line">样例输出：</span><br><span class="line"><span class="number">2</span></span><br><span class="line">    </span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">string</span> s;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;s;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s.length();i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(s[i]==<span class="string">'A'</span>)</span><br><span class="line">            ans++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//C版本</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">char</span> s[<span class="number">105</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> len,cnt=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%s"</span>,s);</span><br><span class="line">    len=<span class="built_in">strlen</span>(s);<span class="comment">//strlen()时间复杂度是O(n)</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(s[i]==<span class="string">'A'</span>)</span><br><span class="line">            cnt++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,cnt);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -368,7 +366,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

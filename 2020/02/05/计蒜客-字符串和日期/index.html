@@ -1,484 +1,633 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-default-color-scheme=auto>
+
+
+
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.9.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-
-
-<script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('http://yoursite.com').hostname,
-    root: '/',
-    scheme: 'Gemini',
-    version: '7.7.0',
-    exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: true,
-    mediumzoom: false,
-    lazyload: false,
-    pangu: false,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
-  };
-</script>
-
-  <meta name="description" content="计蒜客蓝桥杯训练，字符串和日期专题">
-<meta name="keywords" content="蓝桥杯">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ZSH">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="计蒜客蓝桥杯训练，字符串和日期专题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计蒜客-字符串和日期">
-<meta property="og:url" content="http://yoursite.com/2020/02/05/计蒜客-字符串和日期/index.html">
+<meta property="og:url" content="http://yoursite.com/2020/02/05/%E8%AE%A1%E8%92%9C%E5%AE%A2-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E6%97%A5%E6%9C%9F/index.html">
 <meta property="og:site_name" content="ZSH">
 <meta property="og:description" content="计蒜客蓝桥杯训练，字符串和日期专题">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2021-09-14T07:40:30.401Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="计蒜客-字符串和日期">
-<meta name="twitter:description" content="计蒜客蓝桥杯训练，字符串和日期专题">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-05T09:10:30.000Z">
+<meta property="article:modified_time" content="2021-09-14T07:40:30.401Z">
+<meta property="article:author" content="ZSH">
+<meta property="article:tag" content="蓝桥杯">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>计蒜客-字符串和日期 - ZSH</title>
 
-<link rel="canonical" href="http://yoursite.com/2020/02/05/计蒜客-字符串和日期/">
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome: false,
-    isPost: true
-  };
-</script>
 
-  <title>计蒜客-字符串和日期 | ZSH</title>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
 
 
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"yoursite.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
 
 
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+  
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="ZSH" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
-
-    <div>
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">ZSH</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-        <p class="site-subtitle">ZSH's blog</p>
-  </div>
-
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-</div>
-
-
-<nav class="site-nav">
+<body>
   
-  <ul id="menu" class="menu">
-        <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+  <header>
+    
 
-  </li>
-        <li class="menu-item menu-item-tags">
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
 
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
-
-  </li>
-        <li class="menu-item menu-item-photo">
-
-    <a href="/albums/" rel="section"><i class="fa fa-fw fa-camera-retro"></i>Albums</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
-
-  </li>
-  </ul>
-
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
 </nav>
-</div>
-    </header>
 
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content">
-            
-
-  <div class="posts-expand">
-      
   
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/05/计蒜客-字符串和日期/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/1.jpg">
-      <meta itemprop="name" content="ZSH">
-      <meta itemprop="description" content="Hello,here is zhangshaohui's blog.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZSH">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          计蒜客-字符串和日期
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-02-05 17:10:30" itemprop="dateCreated datePublished" datetime="2020-02-05T17:10:30+08:00">2020-02-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-09-14 15:40:30" itemprop="dateModified" datetime="2021-09-14T15:40:30+08:00">2021-09-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/蓝桥杯/" itemprop="url" rel="index">
-                    <span itemprop="name">蓝桥杯</span>
-                  </a>
-                </span>
-            </span>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
           
-
+            <span id="subtitle" data-typed-text="计蒜客-字符串和日期"></span>
+          
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <p>计蒜客蓝桥杯训练，字符串和日期专题</p>
-<a id="more"></a>
-
-<h4 id="字符串中A的数量"><a href="#字符串中A的数量" class="headerlink" title="字符串中A的数量"></a>字符串中A的数量</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">题面：输入一个字符串，统计其中字符A的数量并输出</span><br><span class="line">样例输入：</span><br><span class="line">AabdkeaoektA</span><br><span class="line">样例输出：</span><br><span class="line"><span class="number">2</span></span><br><span class="line">    </span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">string</span> s;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;s;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s.length();i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(s[i]==<span class="string">'A'</span>)</span><br><span class="line">            ans++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//C版本</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">char</span> s[<span class="number">105</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> len,cnt=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%s"</span>,s);</span><br><span class="line">    len=<span class="built_in">strlen</span>(s);<span class="comment">//strlen()时间复杂度是O(n)</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(s[i]==<span class="string">'A'</span>)</span><br><span class="line">            cnt++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,cnt);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="最长的名字"><a href="#最长的名字" class="headerlink" title="最长的名字"></a>最长的名字</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">题面：N个同学，输出名字最长同学的名字</span><br><span class="line">样例输入：</span><br><span class="line"><span class="number">3</span></span><br><span class="line">Tom</span><br><span class="line">Gaofei</span><br><span class="line">Lobs</span><br><span class="line">样例输出：</span><br><span class="line">Gaofei</span><br><span class="line">    </span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="built_in">string</span> s[<span class="number">105</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,max=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">string</span> ans;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;s[i];</span><br><span class="line">        <span class="keyword">if</span>(s[i].length()&gt;max)&#123;</span><br><span class="line">            max=s[i].length();</span><br><span class="line">            ans=s[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//C版本</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">int</span> anslen;</span><br><span class="line"><span class="keyword">char</span> s[<span class="number">105</span>],ans[<span class="number">105</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> N,len;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;N);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s"</span>,s);</span><br><span class="line">        len=<span class="built_in">strlen</span>(s);</span><br><span class="line">        <span class="keyword">if</span>(len&gt;anslen)&#123;</span><br><span class="line">            anslen=len;</span><br><span class="line">            <span class="built_in">strcpy</span>(ans,s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%s\n"</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">题面：https:<span class="comment">//www.jisuanke.com/course/6497/341020</span></span><br><span class="line">样例输入：</span><br><span class="line">ABCDZ123abcdefz</span><br><span class="line">样例输出：</span><br><span class="line">BCDEA123bcdefga   </span><br><span class="line">    </span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">string</span> s;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;s;</span><br><span class="line">    <span class="keyword">int</span> len=s.length();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i &lt; len;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(s[i]==<span class="string">'z'</span>)&#123;</span><br><span class="line">            s[i]=<span class="string">'a'</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(s[i]==<span class="string">'Z'</span>)</span><br><span class="line">            s[i]=<span class="string">'A'</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>((s[i]&gt;=<span class="string">'A'</span>&amp;&amp;s[i]&lt;<span class="string">'Z'</span>)||(s[i]&gt;=<span class="string">'a'</span>&amp;&amp;s[i]&lt;<span class="string">'z'</span>))</span><br><span class="line">            s[i]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;s;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//C版本</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">char</span> s[<span class="number">1005</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> len;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%s"</span>,s);</span><br><span class="line">    len=<span class="built_in">strlen</span>(s);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(s[i]==<span class="string">'z'</span>)&#123;</span><br><span class="line">            s[i]=<span class="string">'a'</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(s[i]==<span class="string">'Z'</span>)</span><br><span class="line">            s[i]=<span class="string">'A'</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>((s[i]&gt;=<span class="string">'A'</span>&amp;&amp;s[i]&lt;<span class="string">'Z'</span>)||(s[i]&gt;=<span class="string">'a'</span>&amp;&amp;s[i]&lt;<span class="string">'z'</span>))</span><br><span class="line">            s[i]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%s"</span>,s);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="大数的奇偶性判断"><a href="#大数的奇偶性判断" class="headerlink" title="大数的奇偶性判断"></a>大数的奇偶性判断</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">题面：https:<span class="comment">//www.jisuanke.com/course/6497/341021</span></span><br><span class="line">样例输入：</span><br><span class="line"><span class="number">1231393713904</span></span><br><span class="line">样例输出：</span><br><span class="line">YES</span><br><span class="line">    </span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">string</span> s;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;s;</span><br><span class="line">    <span class="keyword">int</span> len=s.length();</span><br><span class="line">    <span class="keyword">if</span>(!(<span class="keyword">int</span>(s[len<span class="number">-1</span>]-<span class="string">'0'</span>)&amp;<span class="number">1</span>))&#123;<span class="comment">//!的优先级大于&amp;，0的ASCII码是48（30H）</span></span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"YES"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"NO"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="字符反转"><a href="#字符反转" class="headerlink" title="字符反转"></a>字符反转</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">题面：将输入的字符串反转。</span><br><span class="line">样例输入：<span class="number">1234567890</span></span><br><span class="line">样例输出：<span class="number">0987654321</span></span><br><span class="line">    </span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">string</span> s;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;s;</span><br><span class="line">    <span class="keyword">int</span> len=s.length();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=len<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i!=<span class="number">0</span>) <span class="built_in">cout</span>&lt;&lt;s[i];</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">cout</span>&lt;&lt;s[i]&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="最后一个单词"><a href="#最后一个单词" class="headerlink" title="最后一个单词"></a>最后一个单词</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">题面：https:<span class="comment">//www.jisuanke.com/course/6497/341023</span></span><br><span class="line">样例输入：</span><br><span class="line">Today is a nice day</span><br><span class="line">样例输出：    </span><br><span class="line"><span class="number">3</span></span><br><span class="line">    </span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">string</span> s;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;s);<span class="comment">//循环结束后s的内容是最后一个字符串，样例中是day</span></span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;s.length()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;    </span><br><span class="line"><span class="comment">//C版本</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">char</span> s[<span class="number">10005</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%s"</span>,s)!=EOF);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,<span class="built_in">strlen</span>(s));</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="蓝桥杯真题：十字图"><a href="#蓝桥杯真题：十字图" class="headerlink" title="蓝桥杯真题：十字图"></a>蓝桥杯真题：十字图</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre></td><td class="code"><pre><span class="line">题面：https:<span class="comment">//www.jisuanke.com/course/6497/341024</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> s[<span class="number">150</span>][<span class="number">150</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n, x, y;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    x = <span class="number">0</span>;</span><br><span class="line">    y = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span> * n + <span class="number">5</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">4</span> * n + <span class="number">5</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[i][j] = <span class="string">'.'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n + <span class="number">1</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = y + <span class="number">2</span>; j &lt;= y + <span class="number">4</span> * (n - i) + <span class="number">2</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[x][j] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = x; j &lt;= x + <span class="number">2</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[j][y + <span class="number">2</span>] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = x; j &lt;= x + <span class="number">2</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[j][y + <span class="number">4</span> * (n - i) + <span class="number">2</span>] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = y; j &lt;= y + <span class="number">2</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[x + <span class="number">2</span>][j] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = y + <span class="number">4</span> * (n - i) + <span class="number">2</span>; j &lt;= y + <span class="number">4</span> * (n - i) + <span class="number">4</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[x + <span class="number">2</span>][j] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = x + <span class="number">2</span>; j &lt;= x + <span class="number">4</span> * (n - i) + <span class="number">2</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[j][y] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = x + <span class="number">2</span>; j &lt;= x + <span class="number">4</span> * (n - i) + <span class="number">2</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[j][y + <span class="number">4</span> * (n - i) + <span class="number">4</span>] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = y; j &lt;= y + <span class="number">2</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[x + <span class="number">4</span> * (n - i) + <span class="number">2</span>][j] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = y + <span class="number">4</span> * (n - i) + <span class="number">2</span>; j &lt;= y + <span class="number">4</span> * (n - i) + <span class="number">4</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[x + <span class="number">4</span> * (n - i) + <span class="number">2</span>][j] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = x + <span class="number">4</span>*(n-i)+<span class="number">2</span>; j &lt;= x + <span class="number">4</span> * (n-i) + <span class="number">4</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[j][y + <span class="number">2</span>] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = x + <span class="number">4</span>*(n-i)+<span class="number">2</span>; j &lt;= x + <span class="number">4</span> * (n-i) + <span class="number">4</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[j][y + <span class="number">4</span> * (n - i) + <span class="number">2</span>] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = y + <span class="number">2</span>; j &lt;= y + <span class="number">4</span> * (n - i) + <span class="number">2</span>; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[x + <span class="number">4</span> * (n - i) + <span class="number">4</span>][j] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        x+=<span class="number">2</span>;</span><br><span class="line">        y+=<span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">   	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span> * n + <span class="number">5</span>; i++)</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;s[i]&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//标程</span></span><br><span class="line"><span class="comment">//观察图形发现，上下对称，左右对称，所以只需要处理左上角即可</span></span><br><span class="line"><span class="comment">//对于左上角，也是一个对称图形，找到每一层对应的$的规律就可以了</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> s[<span class="number">150</span>][<span class="number">150</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">2</span> * (n + <span class="number">1</span>); ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= <span class="number">2</span> * (n + <span class="number">1</span>); ++j)</span><br><span class="line">        &#123;</span><br><span class="line">            s[i][j] = <span class="string">'.'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n + <span class="number">1</span>; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        s[<span class="number">2</span> * i][<span class="number">2</span> * i] = <span class="string">'$'</span>;</span><br><span class="line">        s[<span class="number">2</span> * i - <span class="number">1</span>][<span class="number">2</span> * i] = <span class="string">'$'</span>;</span><br><span class="line">        s[<span class="number">2</span> * i][<span class="number">2</span> * i - <span class="number">1</span>] = <span class="string">'$'</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">2</span> * i; j &lt;= <span class="number">2</span> * (n + <span class="number">1</span>); j++)</span><br><span class="line">        &#123;</span><br><span class="line">            s[<span class="number">2</span> * i - <span class="number">2</span>][j] = s[j][<span class="number">2</span> * i - <span class="number">2</span>] = <span class="string">'$'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">2</span> * (n + <span class="number">1</span>); ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= <span class="number">2</span> * (n + <span class="number">1</span>); ++j)</span><br><span class="line">        &#123;</span><br><span class="line">            s[i][<span class="number">4</span> * (n + <span class="number">1</span>) - j] = s[<span class="number">4</span> * (n + <span class="number">1</span>) - i][j] = s[<span class="number">4</span> * (n + <span class="number">1</span>) - i][<span class="number">4</span> * (n + <span class="number">1</span>) - j] = s[i][j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">4</span> * (n + <span class="number">1</span>); ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%s\n"</span>, s[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="节假日"><a href="#节假日" class="headerlink" title="节假日"></a>节假日</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">题面：https:<span class="comment">//www.jisuanke.com/course/6497/341025</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> day[<span class="number">13</span>]=&#123;<span class="number">0</span>,<span class="number">31</span>,<span class="number">28</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//将已经知道的阳历节假日记录</span></span><br><span class="line"><span class="keyword">int</span> mm[<span class="number">10</span>]=&#123;<span class="number">1</span>,<span class="number">5</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">12</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> dd[<span class="number">10</span>]=&#123;<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">25</span>&#125;;</span><br><span class="line"><span class="comment">//日期一直向前走</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">nextday</span><span class="params">(<span class="keyword">int</span> &amp;m,<span class="keyword">int</span> &amp;d)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(d==day[m])&#123;</span><br><span class="line">        m++;</span><br><span class="line">        d=<span class="number">1</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span> d++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> y,w,m,d,f;<span class="comment">//f记录的是春节剩余的天数。若f=0则表示不在春节里</span></span><br><span class="line">    <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;y;</span><br><span class="line">    <span class="keyword">if</span>((y%<span class="number">4</span> == <span class="number">0</span> &amp;&amp; y % <span class="number">100</span> != <span class="number">0</span>)||y%<span class="number">400</span>==<span class="number">0</span>)&#123;</span><br><span class="line">        day[<span class="number">2</span>]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//输入阴历节假日的阳历日期</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">6</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;mm[i]&gt;&gt;dd[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;w;</span><br><span class="line">    m=<span class="number">1</span>;d=<span class="number">1</span>;<span class="comment">//当前是1月1号</span></span><br><span class="line">    f=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(m!=<span class="number">13</span>)&#123;</span><br><span class="line">        <span class="comment">//1、判断是不是春节</span></span><br><span class="line">        <span class="comment">//2、判断春节剩余的天数</span></span><br><span class="line">        <span class="comment">//3、判断是不是周末</span></span><br><span class="line">        <span class="comment">//4、判断是不是节假日</span></span><br><span class="line">        <span class="comment">//首先判断春节的状态，此处最为巧妙应当好好理解</span></span><br><span class="line">        <span class="keyword">if</span>(m==mm[<span class="number">6</span>]&amp;&amp;d==dd[<span class="number">6</span>])&#123;<span class="comment">//若在春节里</span></span><br><span class="line">            ans++;</span><br><span class="line">            f=<span class="number">2</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(f)&#123;<span class="comment">//f的值不为0，表示现在在春节里所以要将ans+1，将春节剩余的天数-1</span></span><br><span class="line">            ans++;</span><br><span class="line">            f--;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span>(w==<span class="number">6</span>||w==<span class="number">7</span>)&#123;<span class="comment">//判断是不是双休日</span></span><br><span class="line">            ans++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(m==mm[i]&amp;d==dd[i])&#123;</span><br><span class="line">                    ans++;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        nextday(m,d);</span><br><span class="line">        <span class="comment">//修改现在是星期几</span></span><br><span class="line">        w++;</span><br><span class="line">        <span class="keyword">if</span>(w==<span class="number">8</span>)</span><br><span class="line">            w=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-    </div>
-
-    
-    
-    
-
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/蓝桥杯/" rel="tag"># 蓝桥杯</a>
-          </div>
 
         
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/02/05/算法基础-递归/" rel="prev" title="算法基础-递归">
-      <i class="fa fa-chevron-left"></i> 算法基础-递归
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/02/16/MySQL笔记/" rel="next" title="MySQL学习笔记">
-      MySQL学习笔记 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
+          
+  <div class="mt-3">
     
-  </article>
-  
-  
-  
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2020-02-05 17:10" pubdate>
+          February 5, 2020 pm
+        </time>
+      </span>
+    
+  </div>
 
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          6.9k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          58 mins
+        
+      </span>
+    
+
+    
+    
   </div>
 
 
-          </div>
-          
+        
+      </div>
 
-<script>
-  window.addEventListener('tabs:register', () => {
-    let activeClass = CONFIG.comments.activeClass;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">计蒜客-字符串和日期</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>计蒜客蓝桥杯训练，字符串和日期专题</p>
+<span id="more"></span>
+
+<h4 id="字符串中A的数量"><a href="#字符串中A的数量" class="headerlink" title="字符串中A的数量"></a>字符串中A的数量</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs cpp">题面：输入一个字符串，统计其中字符A的数量并输出<br>样例输入：<br>AabdkeaoektA<br>样例输出：<br><span class="hljs-number">2</span><br>    <br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstring&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-type">int</span> ans=<span class="hljs-number">0</span>;<br>    string s;<br>    cin&gt;&gt;s;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;s.<span class="hljs-built_in">length</span>();i++)&#123;<br>        <span class="hljs-keyword">if</span>(s[i]==<span class="hljs-string">&#x27;A&#x27;</span>)<br>            ans++;<br>    &#125;<br>    cout&lt;&lt;ans&lt;&lt;endl;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><br><span class="hljs-comment">//C版本</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">char</span> s[<span class="hljs-number">105</span>];<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-type">int</span> len,cnt=<span class="hljs-number">0</span>;<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%s&quot;</span>,s);<br>    len=<span class="hljs-built_in">strlen</span>(s);<span class="hljs-comment">//strlen()时间复杂度是O(n)</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;len;i++)&#123;<br>        <span class="hljs-keyword">if</span>(s[i]==<span class="hljs-string">&#x27;A&#x27;</span>)<br>            cnt++;<br>    &#125;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>,cnt);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><br></code></pre></td></tr></table></figure>
+
+<h4 id="最长的名字"><a href="#最长的名字" class="headerlink" title="最长的名字"></a>最长的名字</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><code class="hljs cpp">题面：N个同学，输出名字最长同学的名字<br>样例输入：<br><span class="hljs-number">3</span><br>Tom<br>Gaofei<br>Lobs<br>样例输出：<br>Gaofei<br>    <br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstring&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br>string s[<span class="hljs-number">105</span>];<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-type">int</span> n,max=<span class="hljs-number">0</span>;<br>    string ans;<br>    cin&gt;&gt;n;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++)&#123;<br>        cin&gt;&gt;s[i];<br>        <span class="hljs-keyword">if</span>(s[i].<span class="hljs-built_in">length</span>()&gt;max)&#123;<br>            max=s[i].<span class="hljs-built_in">length</span>();<br>            ans=s[i];<br>        &#125;<br>    &#125;<br>    cout&lt;&lt;ans&lt;&lt;endl;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><span class="hljs-comment">//C版本</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> anslen;<br><span class="hljs-type">char</span> s[<span class="hljs-number">105</span>],ans[<span class="hljs-number">105</span>];<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-type">int</span> N,len;<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;N);<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;N;i++)&#123;<br>        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%s&quot;</span>,s);<br>        len=<span class="hljs-built_in">strlen</span>(s);<br>        <span class="hljs-keyword">if</span>(len&gt;anslen)&#123;<br>            anslen=len;<br>            <span class="hljs-built_in">strcpy</span>(ans,s);<br>        &#125;<br>    &#125;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s\n&quot;</span>,ans);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><code class="hljs cpp">题面：https:<span class="hljs-comment">//www.jisuanke.com/course/6497/341020</span><br>样例输入：<br>ABCDZ123abcdefz<br>样例输出：<br>BCDEA123bcdefga   <br>    <br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstring&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    string s;<br>    cin&gt;&gt;s;<br>    <span class="hljs-type">int</span> len=s.<span class="hljs-built_in">length</span>();<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i &lt; len;i++)&#123;<br>        <span class="hljs-keyword">if</span>(s[i]==<span class="hljs-string">&#x27;z&#x27;</span>)&#123;<br>            s[i]=<span class="hljs-string">&#x27;a&#x27;</span>;<br>        &#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(s[i]==<span class="hljs-string">&#x27;Z&#x27;</span>)<br>            s[i]=<span class="hljs-string">&#x27;A&#x27;</span>;<br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>((s[i]&gt;=<span class="hljs-string">&#x27;A&#x27;</span>&amp;&amp;s[i]&lt;<span class="hljs-string">&#x27;Z&#x27;</span>)||(s[i]&gt;=<span class="hljs-string">&#x27;a&#x27;</span>&amp;&amp;s[i]&lt;<span class="hljs-string">&#x27;z&#x27;</span>))<br>            s[i]++;<br>    &#125;<br>    cout&lt;&lt;s;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><span class="hljs-comment">//C版本</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstdio&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstring&gt;</span></span><br><span class="hljs-type">char</span> s[<span class="hljs-number">1005</span>];<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-type">int</span> len;<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%s&quot;</span>,s);<br>    len=<span class="hljs-built_in">strlen</span>(s);<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;len;i++)&#123;<br>        <span class="hljs-keyword">if</span>(s[i]==<span class="hljs-string">&#x27;z&#x27;</span>)&#123;<br>            s[i]=<span class="hljs-string">&#x27;a&#x27;</span>;<br>        &#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(s[i]==<span class="hljs-string">&#x27;Z&#x27;</span>)<br>            s[i]=<span class="hljs-string">&#x27;A&#x27;</span>;<br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>((s[i]&gt;=<span class="hljs-string">&#x27;A&#x27;</span>&amp;&amp;s[i]&lt;<span class="hljs-string">&#x27;Z&#x27;</span>)||(s[i]&gt;=<span class="hljs-string">&#x27;a&#x27;</span>&amp;&amp;s[i]&lt;<span class="hljs-string">&#x27;z&#x27;</span>))<br>            s[i]++;<br>    &#125;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s&quot;</span>,s);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h4 id="大数的奇偶性判断"><a href="#大数的奇偶性判断" class="headerlink" title="大数的奇偶性判断"></a>大数的奇偶性判断</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs cpp">题面：https:<span class="hljs-comment">//www.jisuanke.com/course/6497/341021</span><br>样例输入：<br><span class="hljs-number">1231393713904</span><br>样例输出：<br>YES<br>    <br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstring&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    string s;<br>    cin&gt;&gt;s;<br>    <span class="hljs-type">int</span> len=s.<span class="hljs-built_in">length</span>();<br>    <span class="hljs-keyword">if</span>(!(<span class="hljs-built_in">int</span>(s[len<span class="hljs-number">-1</span>]-<span class="hljs-string">&#x27;0&#x27;</span>)&amp;<span class="hljs-number">1</span>))&#123;<span class="hljs-comment">//!的优先级大于&amp;，0的ASCII码是48（30H）</span><br>        cout&lt;&lt;<span class="hljs-string">&quot;YES&quot;</span>&lt;&lt;endl;<br>    &#125;<br>    <span class="hljs-keyword">else</span>&#123;<br>        cout&lt;&lt;<span class="hljs-string">&quot;NO&quot;</span>&lt;&lt;endl;<br>    &#125; <br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h4 id="字符反转"><a href="#字符反转" class="headerlink" title="字符反转"></a>字符反转</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs cpp">题面：将输入的字符串反转。<br>样例输入：<span class="hljs-number">1234567890</span><br>样例输出：<span class="hljs-number">0987654321</span><br>    <br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstring&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    string s;<br>    cin&gt;&gt;s;<br>    <span class="hljs-type">int</span> len=s.<span class="hljs-built_in">length</span>();<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=len<span class="hljs-number">-1</span>;i&gt;=<span class="hljs-number">0</span>;i--)&#123;<br>        <span class="hljs-keyword">if</span>(i!=<span class="hljs-number">0</span>) cout&lt;&lt;s[i];<br>        <span class="hljs-keyword">else</span> cout&lt;&lt;s[i]&lt;&lt;endl;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h4 id="最后一个单词"><a href="#最后一个单词" class="headerlink" title="最后一个单词"></a>最后一个单词</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs cpp">题面：https:<span class="hljs-comment">//www.jisuanke.com/course/6497/341023</span><br>样例输入：<br>Today is a nice day<br>样例输出：    <br><span class="hljs-number">3</span><br>    <br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstring&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    string s;<br>    <span class="hljs-keyword">while</span>(cin&gt;&gt;s);<span class="hljs-comment">//循环结束后s的内容是最后一个字符串，样例中是day</span><br>    cout&lt;&lt;s.<span class="hljs-built_in">length</span>()&lt;&lt;endl;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;    <br><span class="hljs-comment">//C版本</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstdio&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstring&gt;</span></span><br><span class="hljs-type">char</span> s[<span class="hljs-number">10005</span>];<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%s&quot;</span>,s)!=EOF);<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>,<span class="hljs-built_in">strlen</span>(s));<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h4 id="蓝桥杯真题：十字图"><a href="#蓝桥杯真题：十字图" class="headerlink" title="蓝桥杯真题：十字图"></a>蓝桥杯真题：十字图</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre></td><td class="code"><pre><code class="hljs cpp">题面：https:<span class="hljs-comment">//www.jisuanke.com/course/6497/341024</span><br><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-type">char</span> s[<span class="hljs-number">150</span>][<span class="hljs-number">150</span>];<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-type">int</span> n, x, y;<br>    cin &gt;&gt; n;<br>    x = <span class="hljs-number">0</span>;<br>    y = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">4</span> * n + <span class="hljs-number">5</span>; i++)<br>    &#123;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">4</span> * n + <span class="hljs-number">5</span>; j++)<br>        &#123;<br>            s[i][j] = <span class="hljs-string">&#x27;.&#x27;</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n + <span class="hljs-number">1</span>; i++)<br>    &#123;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = y + <span class="hljs-number">2</span>; j &lt;= y + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">2</span>; j++)<br>        &#123;<br>            s[x][j] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = x; j &lt;= x + <span class="hljs-number">2</span>; j++)<br>        &#123;<br>            s[j][y + <span class="hljs-number">2</span>] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = x; j &lt;= x + <span class="hljs-number">2</span>; j++)<br>        &#123;<br>            s[j][y + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">2</span>] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = y; j &lt;= y + <span class="hljs-number">2</span>; j++)<br>        &#123;<br>            s[x + <span class="hljs-number">2</span>][j] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = y + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">2</span>; j &lt;= y + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">4</span>; j++)<br>        &#123;<br>            s[x + <span class="hljs-number">2</span>][j] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = x + <span class="hljs-number">2</span>; j &lt;= x + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">2</span>; j++)<br>        &#123;<br>            s[j][y] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = x + <span class="hljs-number">2</span>; j &lt;= x + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">2</span>; j++)<br>        &#123;<br>            s[j][y + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">4</span>] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = y; j &lt;= y + <span class="hljs-number">2</span>; j++)<br>        &#123;<br>            s[x + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">2</span>][j] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = y + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">2</span>; j &lt;= y + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">4</span>; j++)<br>        &#123;<br>            s[x + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">2</span>][j] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = x + <span class="hljs-number">4</span>*(n-i)+<span class="hljs-number">2</span>; j &lt;= x + <span class="hljs-number">4</span> * (n-i) + <span class="hljs-number">4</span>; j++)<br>        &#123;<br>            s[j][y + <span class="hljs-number">2</span>] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = x + <span class="hljs-number">4</span>*(n-i)+<span class="hljs-number">2</span>; j &lt;= x + <span class="hljs-number">4</span> * (n-i) + <span class="hljs-number">4</span>; j++)<br>        &#123;<br>            s[j][y + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">2</span>] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = y + <span class="hljs-number">2</span>; j &lt;= y + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">2</span>; j++)<br>        &#123;<br>            s[x + <span class="hljs-number">4</span> * (n - i) + <span class="hljs-number">4</span>][j] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>        x+=<span class="hljs-number">2</span>;<br>        y+=<span class="hljs-number">2</span>;<br>    &#125;<br>   	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">4</span> * n + <span class="hljs-number">5</span>; i++)<br>        cout&lt;&lt;s[i]&lt;&lt;endl;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><span class="hljs-comment">//标程</span><br><span class="hljs-comment">//观察图形发现，上下对称，左右对称，所以只需要处理左上角即可</span><br><span class="hljs-comment">//对于左上角，也是一个对称图形，找到每一层对应的$的规律就可以了</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-type">char</span> s[<span class="hljs-number">150</span>][<span class="hljs-number">150</span>];<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-type">int</span> n;<br>    cin &gt;&gt; n;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">2</span> * (n + <span class="hljs-number">1</span>); ++i)<br>    &#123;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt;= <span class="hljs-number">2</span> * (n + <span class="hljs-number">1</span>); ++j)<br>        &#123;<br>            s[i][j] = <span class="hljs-string">&#x27;.&#x27;</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n + <span class="hljs-number">1</span>; ++i)<br>    &#123;<br>        s[<span class="hljs-number">2</span> * i][<span class="hljs-number">2</span> * i] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        s[<span class="hljs-number">2</span> * i - <span class="hljs-number">1</span>][<span class="hljs-number">2</span> * i] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        s[<span class="hljs-number">2</span> * i][<span class="hljs-number">2</span> * i - <span class="hljs-number">1</span>] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">2</span> * i; j &lt;= <span class="hljs-number">2</span> * (n + <span class="hljs-number">1</span>); j++)<br>        &#123;<br>            s[<span class="hljs-number">2</span> * i - <span class="hljs-number">2</span>][j] = s[j][<span class="hljs-number">2</span> * i - <span class="hljs-number">2</span>] = <span class="hljs-string">&#x27;$&#x27;</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">2</span> * (n + <span class="hljs-number">1</span>); ++i)<br>    &#123;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt;= <span class="hljs-number">2</span> * (n + <span class="hljs-number">1</span>); ++j)<br>        &#123;<br>            s[i][<span class="hljs-number">4</span> * (n + <span class="hljs-number">1</span>) - j] = s[<span class="hljs-number">4</span> * (n + <span class="hljs-number">1</span>) - i][j] = s[<span class="hljs-number">4</span> * (n + <span class="hljs-number">1</span>) - i][<span class="hljs-number">4</span> * (n + <span class="hljs-number">1</span>) - j] = s[i][j];<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">4</span> * (n + <span class="hljs-number">1</span>); ++i)<br>    &#123;<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s\n&quot;</span>, s[i]);<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h4 id="节假日"><a href="#节假日" class="headerlink" title="节假日"></a>节假日</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><code class="hljs cpp">题面：https:<span class="hljs-comment">//www.jisuanke.com/course/6497/341025</span><br><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-type">int</span> day[<span class="hljs-number">13</span>]=&#123;<span class="hljs-number">0</span>,<span class="hljs-number">31</span>,<span class="hljs-number">28</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>,<span class="hljs-number">30</span>,<span class="hljs-number">31</span>&#125;;<br><br><span class="hljs-comment">//将已经知道的阳历节假日记录</span><br><span class="hljs-type">int</span> mm[<span class="hljs-number">10</span>]=&#123;<span class="hljs-number">1</span>,<span class="hljs-number">5</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">12</span>&#125;;<br><span class="hljs-type">int</span> dd[<span class="hljs-number">10</span>]=&#123;<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">25</span>&#125;;<br><span class="hljs-comment">//日期一直向前走</span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">nextday</span><span class="hljs-params">(<span class="hljs-type">int</span> &amp;m,<span class="hljs-type">int</span> &amp;d)</span></span>&#123;<br>    <span class="hljs-keyword">if</span>(d==day[m])&#123;<br>        m++;<br>        d=<span class="hljs-number">1</span>;<br>    &#125;<span class="hljs-keyword">else</span> d++;<br>&#125;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-type">int</span> y,w,m,d,f;<span class="hljs-comment">//f记录的是春节剩余的天数。若f=0则表示不在春节里</span><br>    <span class="hljs-type">int</span> ans=<span class="hljs-number">0</span>;<br>    cin&gt;&gt;y;<br>    <span class="hljs-keyword">if</span>((y%<span class="hljs-number">4</span> == <span class="hljs-number">0</span> &amp;&amp; y % <span class="hljs-number">100</span> != <span class="hljs-number">0</span>)||y%<span class="hljs-number">400</span>==<span class="hljs-number">0</span>)&#123;<br>        day[<span class="hljs-number">2</span>]++;<br>    &#125;<br>    <span class="hljs-comment">//输入阴历节假日的阳历日期</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">6</span>;i&lt;<span class="hljs-number">10</span>;i++)&#123;<br>        cin&gt;&gt;mm[i]&gt;&gt;dd[i];<br>    &#125;<br>    cin&gt;&gt;w;<br>    m=<span class="hljs-number">1</span>;d=<span class="hljs-number">1</span>;<span class="hljs-comment">//当前是1月1号</span><br>    f=<span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">while</span>(m!=<span class="hljs-number">13</span>)&#123;<br>        <span class="hljs-comment">//1、判断是不是春节</span><br>        <span class="hljs-comment">//2、判断春节剩余的天数</span><br>        <span class="hljs-comment">//3、判断是不是周末</span><br>        <span class="hljs-comment">//4、判断是不是节假日</span><br>        <span class="hljs-comment">//首先判断春节的状态，此处最为巧妙应当好好理解</span><br>        <span class="hljs-keyword">if</span>(m==mm[<span class="hljs-number">6</span>]&amp;&amp;d==dd[<span class="hljs-number">6</span>])&#123;<span class="hljs-comment">//若在春节里</span><br>            ans++;<br>            f=<span class="hljs-number">2</span>;<br>        &#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(f)&#123;<span class="hljs-comment">//f的值不为0，表示现在在春节里所以要将ans+1，将春节剩余的天数-1</span><br>            ans++;<br>            f--;<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(w==<span class="hljs-number">6</span>||w==<span class="hljs-number">7</span>)&#123;<span class="hljs-comment">//判断是不是双休日</span><br>            ans++;<br>        &#125;<br>        <span class="hljs-keyword">else</span>&#123;<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10</span>;i++)&#123;<br>                <span class="hljs-keyword">if</span>(m==mm[i]&amp;d==dd[i])&#123;<br>                    ans++;<br>                    <span class="hljs-keyword">break</span>;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-built_in">nextday</span>(m,d);<br>        <span class="hljs-comment">//修改现在是星期几</span><br>        w++;<br>        <span class="hljs-keyword">if</span>(w==<span class="hljs-number">8</span>)<br>            w=<span class="hljs-number">1</span>;<br>    &#125;<br>    cout&lt;&lt;ans&lt;&lt;endl;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF/" class="category-chain-item">蓝桥杯</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/">#蓝桥杯</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>计蒜客-字符串和日期</div>
+      <div>http://yoursite.com/2020/02/05/计蒜客-字符串和日期/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>ZSH</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>February 5, 2020</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>Licensed under</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/02/16/MySQL%E7%AC%94%E8%AE%B0/" title="MySQL学习笔记">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">MySQL学习笔记</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/02/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80-%E9%80%92%E5%BD%92/" title="算法基础-递归">
+                        <span class="hidden-mobile">算法基础-递归</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Table of Contents</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
       }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
     }
   });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
 </script>
 
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
+  <script>Fluid.plugins.codeWidget();</script>
 
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串中A的数量"><span class="nav-number">1.</span> <span class="nav-text">字符串中A的数量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最长的名字"><span class="nav-number">2.</span> <span class="nav-text">最长的名字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串"><span class="nav-number">3.</span> <span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数的奇偶性判断"><span class="nav-number">4.</span> <span class="nav-text">大数的奇偶性判断</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字符反转"><span class="nav-number">5.</span> <span class="nav-text">字符反转</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最后一个单词"><span class="nav-number">6.</span> <span class="nav-text">最后一个单词</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#蓝桥杯真题：十字图"><span class="nav-number">7.</span> <span class="nav-text">蓝桥杯真题：十字图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#节假日"><span class="nav-number">8.</span> <span class="nav-text">节假日</span></a></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="ZSH"
-      src="/images/1.jpg">
-  <p class="site-author-name" itemprop="name">ZSH</p>
-  <div class="site-description" itemprop="description">Hello,here is zhangshaohui's blog.</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">10</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">8</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/zshlmy" title="GitHub → https://github.com/zshlmy" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:zshlmy@163.com" title="E-Mail → mailto:zshlmy@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-      </span>
-  </div>
-
-
-  <div class="links-of-blogroll motion-element">
-    <div class="links-of-blogroll-title">
-      <i class="fa fa-fw fa-link"></i>
-      友链
-    </div>
-    <ul class="links-of-blogroll-list">
-        <li class="links-of-blogroll-item">
-          <a href="http://zshlmy.oschina.io" title="http://zshlmy.oschina.io" rel="noopener" target="_blank">Myself</a>
-        </li>
-    </ul>
-  </div>
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-<div class="copyright">
-  
-  &copy; 2019 – 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">ZSH</span>
-</div>
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
-  </div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/pisces.js"></script>
-<script src="/js/next-boot.js"></script>
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
 
 
   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
 </body>
 </html>

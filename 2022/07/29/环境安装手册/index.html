@@ -1,11 +1,21 @@
+
+
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
 <head>
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ZSH">
+  <meta name="keywords" content="">
+  
     <meta name="description" content="配置各种安装环境速查">
 <meta property="og:type" content="article">
 <meta property="og:title" content="环境安装手册">
@@ -17,146 +27,259 @@
 <meta property="article:modified_time" content="2022-07-29T13:55:06.622Z">
 <meta property="article:author" content="ZSH">
 <meta property="article:tag" content="环境配置">
-<meta name="twitter:card" content="summary">
-    
-    
-      
-        
-          <link rel="shortcut icon" href="/images/favicon.ico">
-        
-      
-      
-        
-          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-        
-      
-      
-        
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-        
-      
-    
-    <!-- title -->
-    <title>环境安装手册</title>
-    <!-- styles -->
-    
-<link rel="stylesheet" href="/css/style.css">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>环境安装手册 - ZSH</title>
 
-    <!-- persian styles -->
-    
-    <!-- rss -->
-    
-    
-	<!-- mathjax -->
-	
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"yoursite.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
 <meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="ZSH" type="application/atom+xml">
 </head>
 
-<body class="max-width mx-auto px3 ltr">
-    
-      <div id="header-post">
-  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-        <!--
-       --><li><a href="/">Home</a></li><!--
-     --><!--
-       --><li><a href="/about/">About</a></li><!--
-     --><!--
-       --><li><a href="/archives/">Writing</a></li><!--
-     --><!--
-       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li><!--
-     -->
-      </ul>
-    </span>
-    <br/>
-    <span id="actions">
-      <ul>
-        
-        <li><a class="icon" aria-label="Previous post" href="/2022/08/01/%E6%B5%8B%E8%AF%95/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" aria-label="Next post" href="/2021/02/16/MySQL%E7%AC%94%E8%AE%B0/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
-    </span>
-    <br/>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&text=环境安装手册"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&title=环境安装手册"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&is_video=false&description=环境安装手册"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=环境安装手册&body=Check out this article: http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&title=环境安装手册"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&title=环境安装手册"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&title=环境安装手册"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&title=环境安装手册"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&name=环境安装手册&description=&lt;p&gt;配置各种安装环境速查&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&t=环境安装手册"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
-</ul>
 
-    </div>
-    <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C%E2%80%94%E2%80%94ubuntu"><span class="toc-number">1.</span> <span class="toc-text">编程环境安装手册——ubuntu</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ubuntu%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE"><span class="toc-number">1.1.</span> <span class="toc-text">Ubuntu系统配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90"><span class="toc-number">1.1.1.</span> <span class="toc-text">更换镜像源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEssh"><span class="toc-number">1.1.2.</span> <span class="toc-text">配置ssh</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">程序安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">设置免密登录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">客户端配置文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.1.2.4.</span> <span class="toc-text">服务端配置文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91"><span class="toc-number">1.1.2.5.</span> <span class="toc-text">端口转发</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#scp%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6"><span class="toc-number">1.1.2.6.</span> <span class="toc-text">scp传输文件</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#java"><span class="toc-number">1.2.</span> <span class="toc-text">java</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#go"><span class="toc-number">1.3.</span> <span class="toc-text">go</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#node-js"><span class="toc-number">1.4.</span> <span class="toc-text">node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker"><span class="toc-number">1.5.</span> <span class="toc-text">docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fabric"><span class="toc-number">1.6.</span> <span class="toc-text">fabric</span></a></li></ol></li></ol>
-    </div>
-  </span>
-</div>
-
-    
-    <div class="content index py4">
-        
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    
-    <h1 class="posttitle" itemprop="name headline">
-        环境安装手册
-    </h1>
-
-
-
-    <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">ZSH</span>
-      </span>
-      
-    <div class="postdate">
-      
-        <time datetime="2022-07-29T13:51:26.000Z" itemprop="datePublished">2022-07-29</time>
-        
-      
-    </div>
-
-
-      
-
-      
-    <div class="article-tag">
-        <i class="fas fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" rel="tag">环境配置</a>
-    </div>
-
-
-    </div>
-  </header>
+<body>
   
 
-  <div class="content" itemprop="articleBody">
-    <p>配置各种安装环境速查</p>
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="环境安装手册"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-07-29 21:51" pubdate>
+          July 29, 2022 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          8.7k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          73 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">环境安装手册</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>配置各种安装环境速查</p>
 <span id="more"></span>
 
-<h1 id="编程环境安装手册——ubuntu"><a href="#编程环境安装手册——ubuntu" class="headerlink" title="编程环境安装手册——ubuntu"></a>编程环境安装手册——ubuntu</h1><h2 id="Ubuntu系统配置"><a href="#Ubuntu系统配置" class="headerlink" title="Ubuntu系统配置"></a>Ubuntu系统配置</h2><h3 id="更换镜像源"><a href="#更换镜像源" class="headerlink" title="更换镜像源"></a>更换镜像源</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#修改/etc/apt/目录下的sources.list文件</span></span><br><span class="line"><span class="variable">$cd</span> /etc/apt/</span><br><span class="line"><span class="comment">#做好备份</span></span><br><span class="line"><span class="variable">$sudo</span> <span class="built_in">mv</span> sources.list sources.list.bakup</span><br><span class="line"><span class="comment">#vim创建新的sources.list文件</span></span><br><span class="line"><span class="variable">$sudo</span> vim sources.list</span><br><span class="line"></span><br><span class="line"><span class="comment">#配置好文件后执行下面的命令</span></span><br><span class="line"><span class="comment">#会访问源列表sources.list里的每个网址，并读取软件列表，然后保存在本地</span></span><br><span class="line"><span class="variable">$sudo</span> apt-get update <span class="comment">#更新软件列表</span></span><br><span class="line"><span class="comment">#把本地已安装的软件，与刚下载的软件列表里对应软件进行对比，如果发现已安装的软件版本太低，就会提示你更新。</span></span><br><span class="line"><span class="variable">$sudo</span> apt-get upgrade <span class="comment">#更新软件</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项。</span></span><br><span class="line"><span class="comment">#apt-get 虽然没被弃用，但作为普通用户，还是应该首先使用 apt。</span></span><br><span class="line"><span class="comment">#https://blog.csdn.net/liudsl/article/details/79200134</span></span><br></pre></td></tr></table></figure>
+<h1 id="编程环境安装手册——ubuntu"><a href="#编程环境安装手册——ubuntu" class="headerlink" title="编程环境安装手册——ubuntu"></a>编程环境安装手册——ubuntu</h1><h2 id="Ubuntu系统配置"><a href="#Ubuntu系统配置" class="headerlink" title="Ubuntu系统配置"></a>Ubuntu系统配置</h2><h3 id="更换镜像源"><a href="#更换镜像源" class="headerlink" title="更换镜像源"></a>更换镜像源</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#修改/etc/apt/目录下的sources.list文件</span><br><span class="hljs-variable">$cd</span> /etc/apt/<br><span class="hljs-comment">#做好备份</span><br><span class="hljs-variable">$sudo</span> <span class="hljs-built_in">mv</span> sources.list sources.list.bakup<br><span class="hljs-comment">#vim创建新的sources.list文件</span><br><span class="hljs-variable">$sudo</span> vim sources.list<br><br><span class="hljs-comment">#配置好文件后执行下面的命令</span><br><span class="hljs-comment">#会访问源列表sources.list里的每个网址，并读取软件列表，然后保存在本地</span><br><span class="hljs-variable">$sudo</span> apt-get update <span class="hljs-comment">#更新软件列表</span><br><span class="hljs-comment">#把本地已安装的软件，与刚下载的软件列表里对应软件进行对比，如果发现已安装的软件版本太低，就会提示你更新。</span><br><span class="hljs-variable">$sudo</span> apt-get upgrade <span class="hljs-comment">#更新软件</span><br><br><span class="hljs-comment">#apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项。</span><br><span class="hljs-comment">#apt-get 虽然没被弃用，但作为普通用户，还是应该首先使用 apt。</span><br><span class="hljs-comment">#https://blog.csdn.net/liudsl/article/details/79200134</span><br></code></pre></td></tr></table></figure>
 
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#ubuntu20.04的阿里云网址</span></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse</span><br><span class="line"></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#ubuntu20.04的阿里云网址</span><br>deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse<br>deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse<br><br>deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse<br>deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse<br><br>deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse<br>deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse<br><br>deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse<br>deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse<br><br>deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse<br>deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse<br></code></pre></td></tr></table></figure>
 
 <hr>
 <h3 id="配置ssh"><a href="#配置ssh" class="headerlink" title="配置ssh"></a>配置ssh</h3><p>ssh分为客户端和服务端程序，最流行的ssh协议实现是OpenSSH。即安装OpenSSH客户端和服务端程序。一般情况下windows作为客户端需要安装OpenSSH客户端程序，ubuntu作为服务端需要安装OpenSSH服务端程序。当然无论是windows还是ubuntu都可以即做客户端又做服务端，只需要安装对应程序即可。</p>
@@ -166,39 +289,39 @@
 <li><p>ubuntu作为服务端安装服务端程序</p>
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install openssh-server</span><br><span class="line"><span class="comment">#ubuntu启动sshd服务</span></span><br><span class="line">--------------------------</span><br><span class="line">$ sshd</span><br><span class="line"><span class="comment">#上面的命令运行后，如果提示“sshd re-exec requires execution with an absolute path”，就需要使用绝对路径来启动。这是为了防止有人出于各种目的，放置同名软件在$PATH变量指向的目录中，代替真正的 sshd。</span></span><br><span class="line">$ /usr/sbin/sshd</span><br><span class="line"><span class="comment">#上面的命令运行以后，sshd 自动进入后台，所以命令后面不需要加上&amp;</span></span><br><span class="line">--------------------------</span><br><span class="line"><span class="comment">#除了直接运行可执行文件，也可以通过 Systemd 启动 sshd。</span></span><br><span class="line"><span class="comment"># 启动</span></span><br><span class="line">$ sudo systemctl start sshd.service</span><br><span class="line"><span class="comment"># 停止</span></span><br><span class="line">$ sudo systemctl stop sshd.service</span><br><span class="line"><span class="comment"># 重启</span></span><br><span class="line">$ sudo systemctl restart sshd.service</span><br><span class="line"><span class="comment">#下面的命令让 sshd 在计算机下次启动时自动运行。</span></span><br><span class="line">$ sudo systemctl <span class="built_in">enable</span> sshd.service</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ sudo apt install openssh-server<br><span class="hljs-comment">#ubuntu启动sshd服务</span><br>--------------------------<br>$ sshd<br><span class="hljs-comment">#上面的命令运行后，如果提示“sshd re-exec requires execution with an absolute path”，就需要使用绝对路径来启动。这是为了防止有人出于各种目的，放置同名软件在$PATH变量指向的目录中，代替真正的 sshd。</span><br>$ /usr/sbin/sshd<br><span class="hljs-comment">#上面的命令运行以后，sshd 自动进入后台，所以命令后面不需要加上&amp;</span><br>--------------------------<br><span class="hljs-comment">#除了直接运行可执行文件，也可以通过 Systemd 启动 sshd。</span><br><span class="hljs-comment"># 启动</span><br>$ sudo systemctl start sshd.service<br><span class="hljs-comment"># 停止</span><br>$ sudo systemctl stop sshd.service<br><span class="hljs-comment"># 重启</span><br>$ sudo systemctl restart sshd.service<br><span class="hljs-comment">#下面的命令让 sshd 在计算机下次启动时自动运行。</span><br>$ sudo systemctl <span class="hljs-built_in">enable</span> sshd.service<br></code></pre></td></tr></table></figure>
 
 
 
 <ul>
 <li>ubuntu作为客户端安装客户端程序</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br></code></pre></td></tr></table></figure>
 
 <ul>
 <li><p>windows作为服务端配置服务端程序</p>
 <p>windows安装好服务端程序后需要进行简单的配置启动服务程序</p>
 </li>
 </ul>
-<h4 id="设置免密登录"><a href="#设置免密登录" class="headerlink" title="设置免密登录"></a>设置免密登录</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#先生成非对称秘钥</span></span><br><span class="line"><span class="variable">$ssh</span>-keygen <span class="comment">#执行该程序会在 ~/.ssh/ 目录下生成公私钥文件，将公钥文件传到服务器的~/.ssh/authorized_keys文件中即可实现免密登录</span></span><br><span class="line"><span class="comment">#ubuntu客户端可以使用下面的命令快速将公钥文件传到服务器，该命令会默认从~/.ssh/目录下去公钥传到服务器对应的~/.ssh/authorized_keys文件中。也可以使用-i参数指定公钥文件</span></span><br><span class="line"><span class="variable">$ssh</span>-copy-id user@host</span><br><span class="line"><span class="comment">#windows的OpenSSH客户端没有ssh-copy-id可用以下命令代替 注：修改命令中的user@host</span></span><br><span class="line">$ <span class="built_in">cat</span> ~/.ssh/id_rsa.pub | ssh user@host <span class="string">&quot;mkdir -p ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys&quot;</span></span><br><span class="line">$ <span class="built_in">chmod</span> 644 ~/.ssh/authorized_keys <span class="comment">#必要时需要修改服务器端的authorized_keys的权限，即只有文件所有者才能写。如果权限设置不对，SSH 服务器可能会拒绝读取该文件。</span></span><br></pre></td></tr></table></figure>
+<h4 id="设置免密登录"><a href="#设置免密登录" class="headerlink" title="设置免密登录"></a>设置免密登录</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#先生成非对称秘钥</span><br><span class="hljs-variable">$ssh</span>-keygen <span class="hljs-comment">#执行该程序会在 ~/.ssh/ 目录下生成公私钥文件，将公钥文件传到服务器的~/.ssh/authorized_keys文件中即可实现免密登录</span><br><span class="hljs-comment">#ubuntu客户端可以使用下面的命令快速将公钥文件传到服务器，该命令会默认从~/.ssh/目录下去公钥传到服务器对应的~/.ssh/authorized_keys文件中。也可以使用-i参数指定公钥文件</span><br><span class="hljs-variable">$ssh</span>-copy-id user@host<br><span class="hljs-comment">#windows的OpenSSH客户端没有ssh-copy-id可用以下命令代替 注：修改命令中的user@host</span><br>$ <span class="hljs-built_in">cat</span> ~/.ssh/id_rsa.pub | ssh user@host <span class="hljs-string">&quot;mkdir -p ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys&quot;</span><br>$ <span class="hljs-built_in">chmod</span> 644 ~/.ssh/authorized_keys <span class="hljs-comment">#必要时需要修改服务器端的authorized_keys的权限，即只有文件所有者才能写。如果权限设置不对，SSH 服务器可能会拒绝读取该文件。</span><br></code></pre></td></tr></table></figure>
 
 <p>为了安全性，启用密钥登录之后，最好关闭服务器的密码登录。对于 OpenSSH，具体方法就是打开服务器 sshd 的配置文件<code>/etc/ssh/sshd_config</code>，将<code>PasswordAuthentication</code>这一项设为<code>no</code>。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PasswordAuthentication no</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">PasswordAuthentication no<br></code></pre></td></tr></table></figure>
 
 <p>修改配置文件以后，不要忘了重新启动 sshd，否则不会生效。</p>
 <h4 id="客户端配置文件"><a href="#客户端配置文件" class="headerlink" title="客户端配置文件"></a>客户端配置文件</h4><p>SSH 客户端的全局配置文件是<code>/etc/ssh/ssh_config</code>（ubuntu），用户个人的配置文件在<code>~/.ssh/config</code>（ubuntu和windows），优先级高于全局配置文件。</p>
 <p>用户个人的配置文件<code>~/.ssh/config</code>，可以按照不同服务器，列出各自的连接参数，从而不必每一次登录都输入重复的参数。下面是一个例子。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Host *</span><br><span class="line">     Port 2222</span><br><span class="line"></span><br><span class="line">Host remoteserver</span><br><span class="line">     HostName remote.example.com</span><br><span class="line">     User neo</span><br><span class="line">     Port 2112</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">Host *<br>     Port 2222<br><br>Host remoteserver<br>     HostName remote.example.com<br>     User neo<br>     Port 2112<br></code></pre></td></tr></table></figure>
 
 <p>上面代码中，<code>Host *</code>表示对所有主机生效，后面的<code>Port 2222</code>表示所有主机的默认连接端口都是2222，这样就不用在登录时特别指定端口了。这里的缩进并不是必需的，只是为了视觉上，易于识别针对不同主机的设置。后面的<code>Host remoteserver</code>表示，下面的设置只对主机<code>remoteserver</code>生效。<code>remoteserver</code>只是一个别名，具体的主机由<code>HostName</code>命令指定，<code>User</code>和<code>Port</code>这两项分别表示用户名和端口。这里的<code>Port</code>会覆盖上面<code>Host *</code>部分的<code>Port</code>设置。以后，登录<code>remote.example.com</code>时，只要执行<code>ssh remoteserver</code>命令，就会自动套用 config 文件里面指定的参数。<br>单个主机的配置格式如下。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh remoteserver</span><br><span class="line"><span class="comment"># 等同于</span></span><br><span class="line">$ ssh -p 2112 neo@remote.example.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh remoteserver<br><span class="hljs-comment"># 等同于</span><br>$ ssh -p 2112 neo@remote.example.com<br></code></pre></td></tr></table></figure>
 
 <p><code>Host</code>命令的值可以使用通配符，比如<code>Host *</code>表示对所有主机都有效的设置，<code>Host *.edu</code>表示只对一级域名为<code>.edu</code>的主机有效的设置。它们的设置都可以被单个主机的设置覆盖</p>
 <h4 id="服务端配置文件"><a href="#服务端配置文件" class="headerlink" title="服务端配置文件"></a>服务端配置文件</h4><p>sshd 启动时会自动读取默认的配置文件。如果希望使用其他的配置文件，可以用 sshd 命令的<code>-f</code>参数指定。</p>
 <p>sshd 的配置文件在<code>/etc/ssh</code>（ubuntu）目录，主配置文件是<code>sshd_config</code>，此外还有一些安装时生成的密钥。注意，如果重装 sshd，上面这些密钥都会重新生成，导致客户端重新连接 ssh 服务器时，会跳出警告，拒绝连接。为了避免这种情况，可以在重装 sshd 时，先备份<code>/etc/ssh</code>目录，重装后再恢复这个目录。</p>
 <p>配置文件<code>sshd_config</code>的格式是，每个命令占据一行。每行都是配置项和对应的值，配置项的<strong>大小写不敏感</strong>，与值之间使用空格分隔。配置项中注释只能放在一行的开头，不能放在一行的结尾。</p>
 <p><code>Port</code>指定 sshd 监听的端口，即客户端连接的端口，默认是22（<code>Port 22</code>）。出于安全考虑，可以改掉这个端口（比如<code>Port 8822</code>）。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#配置文件可以使用多个`Port`命令，同时监听多个端口。</span></span><br><span class="line">Port 22</span><br><span class="line">Port 80</span><br><span class="line">Port 443</span><br><span class="line">Port 8080</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#配置文件可以使用多个`Port`命令，同时监听多个端口。</span><br>Port 22<br>Port 80<br>Port 443<br>Port 8080<br></code></pre></td></tr></table></figure>
 
 <p>修改配置文件以后，不要忘了重新启动 sshd，否则不会生效。</p>
 <p><a target="_blank" rel="noopener" href="https://wangdoc.com/ssh/server.html">其余服务端配置项参看这个链接</a></p>
@@ -213,224 +336,401 @@
 <li><p>动态转发</p>
 <p>动态转发指的是，本机与 SSH 服务器之间创建了一个加密连接，然后本机内部针对某个端口的通信，都通过这个加密连接转发。它的一个使用场景就是，访问所有外部网站，都通过 SSH 转发。</p>
 <p>动态转发需要把本地端口绑定到 SSH 服务器。至于 SSH 服务器要去访问哪一个网站，完全是动态的，取决于原始通信，所以叫做动态转发。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -D local-port tunnel-host -N</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh -D local-port tunnel-host -N<br></code></pre></td></tr></table></figure>
 
 <p>上面命令中，<code>-D</code>表示动态转发，<code>local-port</code>是本地端口，<code>tunnel-host</code>是 SSH 服务器，<code>-N</code>表示这个 SSH 连接只进行端口转发，不登录远程 Shell，不能执行远程命令，只能充当隧道。</p>
 <p>举例来说，如果本地端口是<code>2121</code>，那么动态转发的命令就是下面这样。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -D 2121 tunnel-host -N</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh -D 2121 tunnel-host -N<br></code></pre></td></tr></table></figure>
 
 <p>注意，这种转发采用了 SOCKS5 协议。访问外部网站时，需要把 HTTP 请求转成 SOCKS5 协议，才能把本地端口的请求转发出去。</p>
 <p>下面是 SSH 隧道<strong>建立后</strong>的一个使用实例。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl -x socks5://localhost:2121 http://www.example.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ curl -x socks5://localhost:2121 http://www.example.com<br></code></pre></td></tr></table></figure>
 
 <p>上面命令中，curl 的<code>-x</code>参数指定代理服务器，即通过 SOCKS5 协议的本地<code>2121</code>端口，访问<code>http://www.example.com</code>。</p>
 <p>如果经常使用动态转发，可以将设置写入 SSH 客户端的用户个人配置文件（<code>~/.ssh/config</code>）。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DynamicForward tunnel-host:local-port</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">DynamicForward tunnel-host:local-port<br></code></pre></td></tr></table></figure>
 </li>
 <li><p>本地转发</p>
 <p>本地转发（local forwarding）指的是，SSH 服务器作为中介的跳板机，建立本地计算机与特定目标网站之间的加密连接。本地转发是在本地计算机的 SSH 客户端建立的转发规则。</p>
 <p>它会指定一个本地端口（local-port），所有发向那个端口的请求，都会转发到 SSH 跳板机（tunnel-host），然后 SSH 跳板机作为中介，将收到的请求发到目标服务器（target-host）的目标端口（target-port）。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -L local-port:target-host:target-port tunnel-host</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh -L local-port:target-host:target-port tunnel-host<br></code></pre></td></tr></table></figure>
 
 <p>举例来说，现在有一台 SSH 跳板机<code>tunnel-host</code>，我们想要通过这台机器，在本地<code>2121</code>端口与目标网站<code>www.example.com</code>的80端口之间建立 SSH 隧道，就可以写成下面这样。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -L 2121:www.example.com:80 tunnel-host -N</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh -L 2121:www.example.com:80 tunnel-host -N<br></code></pre></td></tr></table></figure>
 
 <p>然后，访问本机的<code>2121</code>端口，就是访问<code>www.example.com</code>的80端口。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl http://localhost:2121</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ curl http://localhost:2121<br></code></pre></td></tr></table></figure>
 
 <p>注意，本地端口转发采用 HTTP 协议，不用转成 SOCKS5 协议。</p>
 </li>
 <li><p>远程转发</p>
 <p>远程转发指的是在远程 SSH 服务器建立的转发规则。</p>
 <p>它跟本地转发正好反过来。建立本地计算机到远程计算机的 SSH 隧道以后，本地转发是通过本地计算机访问远程计算机，而远程转发则是通过远程计算机访问本地计算机。它的命令格式如下。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -R remote-port:target-host:target-port -N remotehost</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh -R remote-port:target-host:target-port -N remotehost<br></code></pre></td></tr></table></figure>
 
 <p><strong>远程转发主要针对内网的情况</strong>。下面举两个例子。</p>
 <p>第一个例子是内网某台服务器<code>localhost</code>在 80 端口开了一个服务，可以通过远程转发将这个 80 端口，映射到具有公网 IP 地址的<code>my.public.server</code>服务器的 8080 端口，使得访问<code>my.public.server:8080</code>这个地址，就可以访问到那台内网服务器的 80 端口。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -R 8080:localhost:80 -N my.public.server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh -R 8080:localhost:80 -N my.public.server<br></code></pre></td></tr></table></figure>
 
 <p>上面命令是在内网<code>localhost</code>服务器上执行，建立从<code>localhost</code>到<code>my.public.server</code>的 SSH 隧道。运行以后，用户访问<code>my.public.server:8080</code>，就会自动映射到<code>localhost:80</code>。</p>
 <p>第二个例子是本地计算机<code>local</code>在外网，SSH 跳板机和目标服务器<code>my.private.server</code>都在内网，必须通过 SSH 跳板机才能访问目标服务器。但是，本地计算机<code>local</code>无法访问内网之中的 SSH 跳板机，而 SSH 跳板机可以访问本机计算机。</p>
 <p>由于本机无法访问内网 SSH 跳板机，就无法从外网发起 SSH 隧道，建立端口转发。必须反过来，从 SSH 跳板机发起隧道，建立端口转发，这时就形成了远程端口转发。跳板机执行下面的命令，绑定本地计算机<code>local</code>的<code>2121</code>端口，去访问<code>my.private.server:80</code>。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -R 2121:my.private.server:80 -N <span class="built_in">local</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh -R 2121:my.private.server:80 -N <span class="hljs-built_in">local</span><br></code></pre></td></tr></table></figure>
 
 <p>上面命令是在 SSH 跳板机上执行的，建立跳板机到<code>local</code>的隧道，并且这条隧道的出口映射到<code>my.private.server:80</code>。</p>
 <p>显然，远程转发要求本地计算机<code>local</code>也安装了 SSH 服务器，这样才能接受 SSH 跳板机的远程登录。</p>
 <p>执行上面的命令以后，跳板机到<code>local</code>的隧道已经建立了。然后，就可以从本地计算机访问目标服务器了，即在本机执行下面的命令。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl http://localhost:2121</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ curl http://localhost:2121<br></code></pre></td></tr></table></figure>
 
 <p>本机执行上面的命令以后，就会输出服务器<code>my.private.server</code>的 80 端口返回的内容。</p>
 <p>如果经常执行远程端口转发，可以将设置写入 SSH 客户端的用户个人配置文件（<code>~/.ssh/config</code>）。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Host remote-forward</span><br><span class="line">  HostName test.example.com</span><br><span class="line">  RemoteForward remote-port target-host:target-port</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">Host remote-forward<br>  HostName test.example.com<br>  RemoteForward remote-port target-host:target-port<br></code></pre></td></tr></table></figure>
 
 <p>完成上面的设置后，执行下面的命令就会建立远程转发。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -N remote-forward</span><br><span class="line"></span><br><span class="line"><span class="comment"># 等同于</span></span><br><span class="line">$ ssh -R remote-port:target-host:target-port -N test.example.com</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh -N remote-forward<br><br><span class="hljs-comment"># 等同于</span><br>$ ssh -R remote-port:target-host:target-port -N test.example.com<br></code></pre></td></tr></table></figure></li>
 </ol>
 <h4 id="scp传输文件"><a href="#scp传输文件" class="headerlink" title="scp传输文件"></a>scp传输文件</h4><p><a target="_blank" rel="noopener" href="https://wangdoc.com/ssh/scp.html">scp 命令 - SSH 教程 - 网道 (wangdoc.com)</a></p>
 <hr>
 <h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><hr>
 <h2 id="go"><a href="#go" class="headerlink" title="go"></a>go</h2><hr>
 <h2 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h2><p>使用NVM安装Node.js，NVM可以帮助我们方便的在Node的不同版本之间进行切换，这样我们就可以同时工作在不同的项目上。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># To download and install the nvm script run:</span></span><br><span class="line"><span class="comment"># 下载并安装nvm脚本：</span></span><br><span class="line"></span><br><span class="line">$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash</span><br><span class="line"><span class="comment">#上面的网址打不开极有可能是被墙了，里面其实就是一个安装脚本，手动翻墙下载之后用bash执行以下即可</span></span><br><span class="line"><span class="comment"># close and reopen the terminal or run the commands to add the path to nvm script to the current shell session.</span></span><br><span class="line"><span class="comment"># 切记nvm安装完毕，要么重新打开终端，要么设置nvm环境变量：</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Using nvm install node</span></span><br><span class="line"><span class="comment"># default install npm</span></span><br><span class="line"><span class="comment"># 使用nvm安装node：</span></span><br><span class="line">$ nvm install node 8.0.0</span><br><span class="line">$ nvm install node 10.0.0</span><br><span class="line"></span><br><span class="line"><span class="comment">#To list installed Node.js versions type:</span></span><br><span class="line"><span class="comment">#显示已经安装node版本：</span></span><br><span class="line">$ nvm <span class="built_in">ls</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#You can change the currently active version with:</span></span><br><span class="line"><span class="comment">#选择使用node版本，这里使用了10.0.0版本：</span></span><br><span class="line">$ nvm use 10.0.0</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># To download and install the nvm script run:</span><br><span class="hljs-comment"># 下载并安装nvm脚本：</span><br><br>$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash<br><span class="hljs-comment">#上面的网址打不开极有可能是被墙了，里面其实就是一个安装脚本，手动翻墙下载之后用bash执行以下即可</span><br><span class="hljs-comment"># close and reopen the terminal or run the commands to add the path to nvm script to the current shell session.</span><br><span class="hljs-comment"># 切记nvm安装完毕，要么重新打开终端，要么设置nvm环境变量：</span><br><br><span class="hljs-comment"># Using nvm install node</span><br><span class="hljs-comment"># default install npm</span><br><span class="hljs-comment"># 使用nvm安装node：</span><br>$ nvm install node 8.0.0<br>$ nvm install node 10.0.0<br><br><span class="hljs-comment">#To list installed Node.js versions type:</span><br><span class="hljs-comment">#显示已经安装node版本：</span><br>$ nvm <span class="hljs-built_in">ls</span><br><br><span class="hljs-comment">#You can change the currently active version with:</span><br><span class="hljs-comment">#选择使用node版本，这里使用了10.0.0版本：</span><br>$ nvm use 10.0.0<br></code></pre></td></tr></table></figure>
 
 <p>node版本维护可以参照官方文档： <a target="_blank" rel="noopener" href="https://nodejs.org/en/about/releases/">https://nodejs.org/en/about/releases/</a></p>
 <h2 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h2><p>[docker安装参考](<a target="_blank" rel="noopener" href="https://learnblockchain.cn/books/enterprise/chapter3_02_part1">https://learnblockchain.cn/books/enterprise/chapter3_02_part1</a> hyperledger_fabric_network_prerequisites.html#hyperledger-fabric-网络体验-系统环境配置)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#卸载旧版本的docker，如果安装了的话</span></span><br><span class="line">$ sudo apt-get remove docker docker-engine docker.io containerd runc</span><br><span class="line"><span class="comment">#使用脚本自动安装最新版docker</span></span><br><span class="line">$ curl -fsSL https://get.docker.com -o get-docker.sh</span><br><span class="line">$ sudo sh get-docker.sh</span><br><span class="line"><span class="comment">#Ubuntu安装好之后docker会自动启动，centos需要使用systemctl或者service手动启动docker服务</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#卸载旧版本的docker，如果安装了的话</span><br>$ sudo apt-get remove docker docker-engine docker.io containerd runc<br><span class="hljs-comment">#使用脚本自动安装最新版docker</span><br>$ curl -fsSL https://get.docker.com -o get-docker.sh<br>$ sudo sh get-docker.sh<br><span class="hljs-comment">#Ubuntu安装好之后docker会自动启动，centos需要使用systemctl或者service手动启动docker服务</span><br></code></pre></td></tr></table></figure>
 
 <p>建立docker组：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo groupadd docker</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ sudo groupadd docker<br></code></pre></td></tr></table></figure>
 
 <p>将当前用户加入 docker 组：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo usermod -aG docker <span class="variable">$USER</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ sudo usermod -aG docker <span class="hljs-variable">$USER</span><br></code></pre></td></tr></table></figure>
 
 <p>执行上述用户组的添加操作是为了给当前用户运行docker时赋予root权限，这样执行docker命令的时候就不需要添加sudo了，这是docker的默认配置。</p>
 <p>国内下载镜像的速度比较慢，可以使用国内镜像加速器。具体方式修改daemon配置文件&#x2F;etc&#x2F;docker&#x2F;daemon.json使用加速器。下面以阿里云加速器地址为例。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ sudo <span class="built_in">mkdir</span> -p /etc/docker</span><br><span class="line">$ sudo <span class="built_in">tee</span> /etc/docker/daemon.json &lt;&lt;-<span class="string">&#x27;EOF&#x27;</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="string">&quot;registry-mirrors&quot;</span>: [<span class="string">&quot;https://hnm*****.mirror.aliyuncs.com&quot;</span>]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line">$ sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ sudo <span class="hljs-built_in">mkdir</span> -p /etc/docker<br>$ sudo <span class="hljs-built_in">tee</span> /etc/docker/daemon.json &lt;&lt;-<span class="hljs-string">&#x27;EOF&#x27;</span><br>&#123;<br><span class="hljs-string">&quot;registry-mirrors&quot;</span>: [<span class="hljs-string">&quot;https://hnm*****.mirror.aliyuncs.com&quot;</span>]<br>&#125;<br>EOF<br>$ sudo systemctl daemon-reload<br>$ sudo systemctl restart docker<br></code></pre></td></tr></table></figure>
 
 <p>镜像加速器地址可以从阿里云网站获取。</p>
 <p>官网地址： <a target="_blank" rel="noopener" href="https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors">https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors</a></p>
 <p>Docker compose的安装可以采用如下命令： 官方文档：<a target="_blank" rel="noopener" href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Run this command to download the current stable release of Docker</span></span><br><span class="line"><span class="comment"># compose:</span></span><br><span class="line"><span class="variable">$sudo</span> curl -L <span class="string">&quot;https://github.com/docker/compose/releases/download/1.25.3/docker-compose-<span class="subst">$(uname -s)</span>-<span class="subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose</span><br><span class="line"></span><br><span class="line"><span class="comment"># Apply executable permissions to the binary:</span></span><br><span class="line">sudo <span class="built_in">chmod</span> +x /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># Run this command to download the current stable release of Docker</span><br><span class="hljs-comment"># compose:</span><br><span class="hljs-variable">$sudo</span> curl -L <span class="hljs-string">&quot;https://github.com/docker/compose/releases/download/1.25.3/docker-compose-<span class="hljs-subst">$(uname -s)</span>-<span class="hljs-subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose<br><br><span class="hljs-comment"># Apply executable permissions to the binary:</span><br>sudo <span class="hljs-built_in">chmod</span> +x /usr/local/bin/docker-compose<br></code></pre></td></tr></table></figure>
 
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/best_luxi/article/details/122648473">几款 Docker 图形化工具</a></p>
 <hr>
 <h2 id="fabric"><a href="#fabric" class="headerlink" title="fabric"></a>fabric</h2>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">#环境配置</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>环境安装手册</div>
+      <div>http://yoursite.com/2022/07/29/环境安装手册/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>ZSH</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>July 29, 2022</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>Licensed under</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
   </div>
-</article>
 
 
 
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/08/01/%E6%B5%8B%E8%AF%95/" title="测试">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">测试</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/02/16/MySQL%E7%AC%94%E8%AE%B0/" title="MySQL学习笔记">
+                        <span class="hidden-mobile">MySQL学习笔记</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
 
-    <div id="nav-footer" style="display: none">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="/archives/">Writing</a></li>
-         
-          <li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li>
-        
-      </ul>
+            
+          </article>
+        </div>
+      </div>
     </div>
 
-    <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C%E2%80%94%E2%80%94ubuntu"><span class="toc-number">1.</span> <span class="toc-text">编程环境安装手册——ubuntu</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ubuntu%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE"><span class="toc-number">1.1.</span> <span class="toc-text">Ubuntu系统配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90"><span class="toc-number">1.1.1.</span> <span class="toc-text">更换镜像源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEssh"><span class="toc-number">1.1.2.</span> <span class="toc-text">配置ssh</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">程序安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">设置免密登录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">客户端配置文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.1.2.4.</span> <span class="toc-text">服务端配置文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91"><span class="toc-number">1.1.2.5.</span> <span class="toc-text">端口转发</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#scp%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6"><span class="toc-number">1.1.2.6.</span> <span class="toc-text">scp传输文件</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#java"><span class="toc-number">1.2.</span> <span class="toc-text">java</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#go"><span class="toc-number">1.3.</span> <span class="toc-text">go</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#node-js"><span class="toc-number">1.4.</span> <span class="toc-text">node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker"><span class="toc-number">1.5.</span> <span class="toc-text">docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fabric"><span class="toc-number">1.6.</span> <span class="toc-text">fabric</span></a></li></ol></li></ol>
-    </div>
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Table of Contents</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
 
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&text=环境安装手册"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&title=环境安装手册"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&is_video=false&description=环境安装手册"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=环境安装手册&body=Check out this article: http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&title=环境安装手册"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&title=环境安装手册"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&title=环境安装手册"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&title=环境安装手册"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&name=环境安装手册&description=&lt;p&gt;配置各种安装环境速查&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2022/07/29/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C/&t=环境安装手册"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
-</ul>
+
+
+  </aside>
+
 
     </div>
-
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
-
   </div>
 </div>
 
-        
-        <footer id="footer">
-  <div class="footer-left">
-    Copyright &copy;
-    
-    
-    2016-2022
-    ZSH
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-        <!--
-       --><li><a href="/">Home</a></li><!--
-     --><!--
-       --><li><a href="/about/">About</a></li><!--
-     --><!--
-       --><li><a href="/archives/">Writing</a></li><!--
-     --><!--
-       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li><!--
-     -->
-      </ul>
-    </nav>
-  </div>
-</footer>
 
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
     </div>
-    <!-- styles -->
+  </div>
+</div>
 
+    
 
+    
+  </main>
 
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
-
-
-    <!-- jquery -->
- 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
-
-
-
-
-<!-- clipboard -->
-
+  <footer>
+    <div class="footer-inner">
   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
   
-  <script type="text/javascript">
-  $(function() {
-    // copy-btn HTML
-    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
-    btn += '<i class="far fa-clone"></i>';
-    btn += '</span>'; 
-    // mount it!
-    $(".highlight table").before(btn);
-    var clip = new ClipboardJS('.btn-copy', {
-      text: function(trigger) {
-        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
-      }
-    });
-    clip.on('success', function(e) {
-      e.trigger.setAttribute('aria-label', "Copied!");
-      e.clearSelection();
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
     })
-  })
   </script>
 
 
-<script src="/js/main.js"></script>
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
-<!-- search -->
 
-<!-- Google Analytics -->
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
 
-<!-- Baidu Analytics -->
 
-<!-- Cloudflare Analytics -->
 
-<!-- Umami Analytics -->
 
-<!-- Disqus Comments -->
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
-<!-- utterances Comments -->
 
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
 </body>
 </html>

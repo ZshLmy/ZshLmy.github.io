@@ -11,11 +11,11 @@ http://yoursite.com/categories/index.html
 http://yoursite.com/tags/index.html
 http://yoursite.com/2020/02/05/%E8%AE%A1%E8%92%9C%E5%AE%A2-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E6%97%A5%E6%9C%9F/
 http://yoursite.com/
-http://yoursite.com/tags/Markdown/
 http://yoursite.com/tags/Git/
 http://yoursite.com/tags/hexo/
-http://yoursite.com/tags/%E6%9E%9A%E4%B8%BE/
+http://yoursite.com/tags/Markdown/
 http://yoursite.com/tags/%E9%80%92%E5%BD%92/
+http://yoursite.com/tags/%E6%9E%9A%E4%B8%BE/
 http://yoursite.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/
 http://yoursite.com/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/
 http://yoursite.com/tags/MySql/

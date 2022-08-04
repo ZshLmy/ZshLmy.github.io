@@ -630,7 +630,7 @@ body {
   letter-spacing: 0.01em;
   font-weight: 200;
   font-style: normal;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 #header #nav ul {
   margin: 0;
@@ -1063,7 +1063,7 @@ body {
   margin-right: 16px;
   min-width: 100px;
   color: #908d8d;
-  font-size: 14px;
+  font-size: 20px;
 }
 @media (min-width: 480px) {
   .post-list .post-item {
@@ -1242,7 +1242,7 @@ article .content .caption {
   margin-right: 16px;
   min-width: 100px;
   color: #908d8d;
-  font-size: 14px;
+  font-size: 20px;
 }
 @media (min-width: 480px) {
   #archive .post-list .post-item {
